@@ -18,10 +18,13 @@
     margin: 0; 
   }
 
-  #map_mtl-long-sault {
+  .map_img {
     width: 30%;
     height: auto;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
   }
+
+
+
+  
