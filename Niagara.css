@@ -1,0 +1,19 @@
+* {
+    font-family: Poppins, sans-serif;
+}
+
+.time{
+    color: #000000;
+    margin: 10px 0;
+}
+
+.schedule {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+  }
+  
+  .schedule h3,
+  .schedule p {
+    margin: 0; 
+  }
