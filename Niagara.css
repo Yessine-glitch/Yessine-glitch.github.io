@@ -29,6 +29,25 @@
     background-color: rgb(225, 225, 225);
   }
 
+  #day1_header {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                      url('https://wanderingwagars.com/wp-content/uploads/2019/04/Sandbanks-Provincial-Park-Feature.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px; 
+    margin-bottom: 0;
+  }
+
+  .subheader_day{
+    font-size: medium;
+    margin: 0;
+  }
+  
+
 
 
   
