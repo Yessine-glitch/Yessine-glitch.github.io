@@ -7,9 +7,15 @@
     <title>Niagara</title>
 </head>
 <body>
-    <h1>Voyage Ontario<h1>
+    
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      
+      
+    <h1>Voyage Ontario 2025<h1>
 
-        <div id="day1_header">
+        <div id="day1_header" class="day_header">
             <h2>JOUR 1 - Sandbanks</h2>
             <p class="subheader_day">Dimanche 20 juillet</p>
         </div>
@@ -31,7 +37,7 @@
             <img src="https://display.blogto.com/articles/20230531-long-sault-parkway.jpg" alt="Long Sault Parkway" id="map_long-sault" class="map_img">
             <a href="https://www.todocanada.ca/day-trip-from-ottawa-traverse11-islands-on-long-sault-parkway/" target="_blank">
                 <img src="https://www.todocanada.ca/wp-content/uploads/Long-Sault-Parkway-e1652208172587.png" alt="Long Sault Parkway Map" id="map_long-sault-parkway" class="map_img">
-            </a></a>
+            </a>
             <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhyke98GczzR7OV71Uj488sfuFZMuxu87P80r7UpNi-P9YCzxEX4eaqEam12nfOWHMemxhebdntN3S6RwSZpGq4tUwFysh9WhyphenhyphenNVxW9Xnxo8kKF9Hz6SPhy6q8jY8cZLdCPARb4861r9RY/s1600/Ingleside.jpg" alt="Long Sault Parkway" id="long-sault-parkway" class="map_img">
         </div>
 
@@ -59,5 +65,40 @@
                 <p>Coucher Trenton</p>
             </div>
         </div>
+
+
+        <div id="day2_header" class="day_header">
+            <h2>JOUR 2 - NIAGARA</h2>
+            <p class="subheader_day">Lundi 21 juillet</p>
+        </div>
+
+        <div id="block1">
+            <div class="schedule">
+                <h3 class="time">8h</h3>
+                <p>Départ Trenton</p>
+            </div>
+            <a href="https://www.google.com/maps/dir/Trenton,+Quinte+West,+ON/Niagara+Falls,+Ontario/@43.6136313,-79.057341,8.96z/data=!4m18!4m17!1m5!1m1!1s0x89d63c644c7c2b53:0x2d689645b513f632!2m2!1d-77.578191!2d44.0996853!1m5!1m1!1s0x89d3445eec824db9:0x46d2c56156bda288!2m2!1d-79.0849436!2d43.0895577!2m3!6e0!7e2!8j1753084800!3e0?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D">
+                <img src="Trenton-Niagara.png" alt="Trenton to Niagara Falls" id="map_trenton-niagara" class="map_img">
+            </a>
+        </div>
+
+        <div>
+            <div class="schedule">
+                <h3 class="time">11h30</h3>
+                <p>Arrivée à Niagara</p>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            window.onscroll = function () {
+              var winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("progressBar").style.width = scrolled + "%";
+            };
+        </script>
 </body>
 </html>
