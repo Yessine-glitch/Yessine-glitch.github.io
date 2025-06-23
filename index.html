@@ -3,143 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage Ontario 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Niagara.css">
-    <title>Niagara</title>
 </head>
 <body>
-    
+    <div class="floating-elements">
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+    </div>
+
     <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
-      </div>
-      
-      
-    <h1>Voyage Ontario 2025<h1>
+    </div>
 
-        <div id="day1_header" class="day_header">
+    <div class="container">
+        <h1>Voyage Ontario 2025</h1>
+
+        <div id="day1-header" class="day-header">
             <h2>JOUR 1 - Sandbanks</h2>
-            <p class="subheader_day">Dimanche 20 juillet</p>
-        </div>
-        
-        <div id="block1">
-            <div class="schedule">
-                <h3 class="time">7h 00</h3>
-                <p>Départ de Montreal</p>
-            </div>
-            <img src="./MTL-LongSault.png" alt="Niagara Falls" id="map_mtl-long-sault" class="map_img">
+            <p>Dimanche 20 juillet</p>
         </div>
 
-        <div>
-            <div class="schedule">
-                <h3 class="time">8h 30 - 9h</h3>
-                <p>Long Sault Parkway (Chemin du Long Sault)</p>
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">7h 00</div>
+                <div class="activity">Départ de Montreal</div>
+                <div class="description">Début de notre aventure vers l'Ontario! Assurez-vous d'avoir tout l'essentiel pour le voyage.</div>
             </div>
-            <p>Sortie 778 de l’autoroute 401 - Pause</p>
-            <img src="https://display.blogto.com/articles/20230531-long-sault-parkway.jpg" alt="Long Sault Parkway" id="map_long-sault" class="map_img">
-            <a href="https://www.todocanada.ca/day-trip-from-ottawa-traverse11-islands-on-long-sault-parkway/" target="_blank">
-                <img src="https://www.todocanada.ca/wp-content/uploads/Long-Sault-Parkway-e1652208172587.png" alt="Long Sault Parkway Map" id="map_long-sault-parkway" class="map_img">
-            </a>
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhyke98GczzR7OV71Uj488sfuFZMuxu87P80r7UpNi-P9YCzxEX4eaqEam12nfOWHMemxhebdntN3S6RwSZpGq4tUwFysh9WhyphenhyphenNVxW9Xnxo8kKF9Hz6SPhy6q8jY8cZLdCPARb4861r9RY/s1600/Ingleside.jpg" alt="Long Sault Parkway" id="long-sault-parkway" class="map_img">
-        </div>
-
-        <div id="block1">
-            <div class="schedule">
-                <h3 class="time">12h 30 - 18h</h3>
-                <p>Sandbanks Provincial Park (Parc provincial des Sables) (2h de Long Sault Parkway)</p>
-            </div>
-            <a href="https://www.google.com/maps/dir/Long+Sault+Parkway+Scenic+Route,+Long+Sault+Parkway,+South+Stormont,+ON/Sandbanks+Provincial+Park,+3004+County+Rd+12,+Picton,+ON+K0K+2T0/@44.4203073,-76.7550986,8.78z/data=!4m18!4m17!1m5!1m1!1s0x4ccc3ded293960e7:0x5409b6947f347d0f!2m2!1d-74.9384449!2d44.995119!1m5!1m1!1s0x89d649551dcf22af:0x714390535028f922!2m2!1d-77.2392234!2d43.9070266!2m3!6e0!7e2!8j1753002000!3e0?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D">
-                <img src="LongSault-Sandbanks.png" alt="Sandbanks Provincial Park" id="map_long-sault-sandbanks" class="map_img">
-            </a>
-            <img src="https://display.blogto.com/articles/2020259-sandbanks-beach.jpg" alt="Sandbanks Provincial Park" id="map_sandbanks" class="map_img">
-        </div>
-
-        <div>
-            <div class="schedule">
-                <h3 class="time">19h</h3>
-                <p>Souper</p>
+            <div class="map-container">
+                <img src="./MTL-LongSault.png" alt="Route Montreal vers Long Sault" class="map-img">
             </div>
         </div>
 
-        <div id="block1">
-            <div class="schedule">
-                <h3 class="time">21h</h3>
-                <p>Coucher Trenton</p>
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">8h 30 - 9h</div>
+                <div class="activity">Long Sault Parkway</div>
+                <div class="description">Sortie 778 de l'autoroute 401 - Pause détente. Profitez des vues magnifiques sur les îles et la rivière Saint-Laurent.</div>
+            </div>
+            <div class="map-container">
+                <img src="https://display.blogto.com/articles/20230531-long-sault-parkway.jpg" alt="Long Sault Parkway" class="map-img">
+                <a href="https://www.todocanada.ca/day-trip-from-ottawa-traverse11-islands-on-long-sault-parkway/" target="_blank">
+                    <img src="https://www.todocanada.ca/wp-content/uploads/Long-Sault-Parkway-e1652208172587.png" alt="Carte Long Sault Parkway" class="map-img">
+                    <div class="link-overlay"></div>
+                </a>
             </div>
         </div>
 
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">12h 30 - 18h</div>
+                <div class="activity">Sandbanks Provincial Park</div>
+                <div class="description">Parc provincial des Sables (2h de Long Sault Parkway). Profitez des plus grandes dunes de sable d'eau douce au monde!</div>
+                <ul class="activity-list">
+                    <li>Plage et baignade</li>
+                    <li>Randonnée sur les dunes</li>
+                    <li>Photographie de paysages</li>
+                </ul>
+            </div>
+            <div class="map-container">
+                <a href="https://www.google.com/maps/dir/Long+Sault+Parkway+Scenic+Route,+Long+Sault+Parkway,+South+Stormont,+ON/Sandbanks+Provincial+Park,+3004+County+Rd+12,+Picton,+ON+K0K+2T0/@44.4203073,-76.7550986,8.78z/data=!4m18!4m17!1m5!1m1!1s0x4ccc3ded293960e7:0x5409b6947f347d0f!2m2!1d-74.9384449!2d44.995119!1m5!1m1!1s0x89d649551dcf22af:0x714390535028f922!2m2!1d-77.2392234!2d43.9070266!2m3!6e0!7e2!8j1753002000!3e0?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                    <img src="LongSault-Sandbanks.png" alt="Route vers Sandbanks" class="map-img">
+                    <div class="link-overlay"></div>
+                </a>
+                <img src="https://display.blogto.com/articles/2020259-sandbanks-beach.jpg" alt="Plage de Sandbanks" class="map-img">
+            </div>
+        </div>
 
-        <div id="day2_header" class="day_header">
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">19h</div>
+                <div class="activity">Souper</div>
+                <div class="description">Dîner dans un restaurant local pour découvrir la cuisine de la région.</div>
+            </div>
+        </div>
+
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">21h</div>
+                <div class="activity">Coucher à Trenton</div>
+                <div class="description">Nuit de repos pour récupérer avant la journée à Niagara.</div>
+            </div>
+        </div>
+
+        <div id="day2-header" class="day-header">
             <h2>JOUR 2 - NIAGARA</h2>
-            <p class="subheader_day">Lundi 21 juillet</p>
+            <p>Lundi 21 juillet</p>
         </div>
 
-        <div id="block1">
-            <div class="schedule">
-                <h3 class="time">8h</h3>
-                <p>Départ Trenton</p>
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">8h</div>
+                <div class="activity">Départ de Trenton</div>
+                <div class="description">Direction les célèbres chutes du Niagara! Préparez-vous pour une journée inoubliable.</div>
             </div>
-            <a href="https://www.google.com/maps/dir/Trenton,+Quinte+West,+ON/Niagara+Falls,+Ontario/@43.6136313,-79.057341,8.96z/data=!4m18!4m17!1m5!1m1!1s0x89d63c644c7c2b53:0x2d689645b513f632!2m2!1d-77.578191!2d44.0996853!1m5!1m1!1s0x89d3445eec824db9:0x46d2c56156bda288!2m2!1d-79.0849436!2d43.0895577!2m3!6e0!7e2!8j1753084800!3e0?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D">
-                <img src="Trenton-Niagara.png" alt="Trenton to Niagara Falls" id="map_trenton-niagara" class="map_img">
-            </a>
-        </div>
-
-        <div>
-            <div class="schedule">
-                <h3 class="time">11h30</h3>
-                <p>Arrivée à Niagara</p>
-            </div>
-            <ul>
-                <li>Diner</li>
-            </uL>
-        </div>
-
-        <div id="block1">
-            <div class="schedule">
-                <h3 class="time">13h</h3>
-                <p>White Water Walk</p>
+            <div class="map-container">
+                <a href="https://www.google.com/maps/dir/Trenton,+Quinte+West,+ON/Niagara+Falls,+Ontario/@43.6136313,-79.057341,8.96z/data=!4m18!4m17!1m5!1m1!1s0x89d63c644c7c2b53:0x2d689645b513f632!2m2!1d-77.578191!2d44.0996853!1m5!1m1!1s0x89d3445eec824db9:0x46d2c56156bda288!2m2!1d-79.0849436!2d43.0895577!2m3!6e0!7e2!8j1753084800!3e0?entry=ttu&g_ep=EgoyMDI1MDYxNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                    <img src="Trenton-Niagara.png" alt="Route Trenton vers Niagara" class="map-img">
+                    <div class="link-overlay"></div>
+                </a>
             </div>
         </div>
 
-        <div>
-            <div class="schedule">
-                <h3 class="time">15h</h3>
-                <p>Journey Behind the Falls</p>
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">11h 30</div>
+                <div class="activity">Arrivée à Niagara</div>
+                <div class="description">Premier contact avec les majestueuses chutes du Niagara.</div>
+                <ul class="activity-list">
+                    <li>Dîner sur place</li>
+                </ul>
             </div>
         </div>
 
-        <div id="block1">
-            <div class="schedule">
-                <h3 class="time">17h</h3>
-                <p>Check-in</p>
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">13h</div>
+                <div class="activity">White Water Walk</div>
+                <div class="description">Promenade le long des rapides les plus sauvages d'Amérique du Nord. Une expérience à couper le souffle!</div>
             </div>
         </div>
 
-        <div>
-            <div class="schedule">
-                <h3 class="time">18h</h3>
-                <p>Souper</p>
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">15h</div>
+                <div class="activity">Journey Behind the Falls</div>
+                <div class="description">Vivez l'expérience unique de vous retrouver derrière les chutes du Niagara. N'oubliez pas votre imperméable!</div>
             </div>
         </div>
 
-        <div id="block1">
-            <div class="schedule">
-                <h3 class="time">20h</h3>
-                <p>Clifton Hills</p>
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">17h</div>
+                <div class="activity">Check-in</div>
+                <div class="description">Installation à l'hôtel et moment de détente avant les activités du soir.</div>
             </div>
-            <ul>
-                <li>Speedway</li>
-                <li>Feux d'artifice</li>
-            </uL>
         </div>
 
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">18h</div>
+                <div class="activity">Souper</div>
+                <div class="description">Repas avec vue sur les chutes illuminées.</div>
+            </div>
+        </div>
 
+        <div class="schedule-block">
+            <div class="schedule-info">
+                <div class="time">20h</div>
+                <div class="activity">Clifton Hills</div>
+                <div class="description">Soirée de divertissement dans le quartier touristique de Niagara.</div>
+                <ul class="activity-list">
+                    <li>Speedway</li>
+                    <li>Feux d'artifice</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-        <script>
-            window.onscroll = function () {
-              var winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-              var scrolled = (winScroll / height) * 100;
-              document.getElementById("progressBar").style.width = scrolled + "%";
-            };
-        </script>
+    <script>
+        // Progress bar animation
+        window.addEventListener('scroll', function() {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        });
+
+        // Smooth reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all schedule blocks
+        document.querySelectorAll('.schedule-block').forEach(block => {
+            observer.observe(block);
+        });
+
+        // Add click handlers for better mobile experience
+        document.querySelectorAll('.map-img').forEach(img => {
+            img.addEventListener('click', function() {
+                if (this.parentElement.tagName === 'A') {
+                    return; // Let the link handle the click
+                }
+                // Add a subtle animation for non-linked images
+                this.style.transform = 'scale(1.02)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+    </script>
 </body>
 </html>
