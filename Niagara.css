@@ -1,5 +1,4 @@
-
-        * {
+* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -114,6 +113,18 @@
             background-image: url('https://cdn.britannica.com/30/94430-050-D0FC51CD/Niagara-Falls.jpg');
         }
 
+        #day3-header {
+            background-image: url('https://www.vmcdn.ca/f/files/thoroldnews/images/landmarks/22040408-niagara-falls-eclipse-ilumination.jpg');
+        }
+
+        #day4-header {
+            background-image: url('https://www.airtransat.com/getmedia/c561ff6f-e480-4b8c-8b27-361d2b1e5ad3/Toronto-downtown-skyline-1000x600.aspx?width=1000&height=600&ext=.jpg');
+        }
+
+        #day5-header {
+            background-image: url('https://www.visitkingston.ca/wp-content/uploads/2020/06/image002-scaled.jpg');
+        }
+
         .schedule-block {
             display: flex;
             align-items: flex-start;
@@ -170,6 +181,13 @@
             margin-bottom: 1rem;
         }
 
+        .location {
+            font-size: 0.9rem;
+            color: #718096;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
         .description {
             font-size: 0.95rem;
             color: #718096;
@@ -193,6 +211,20 @@
             position: absolute;
             left: 0;
             top: 0.3rem;
+        }
+
+        .price-tag {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            z-index: 10;
         }
 
         .map-container {
@@ -313,6 +345,13 @@
                 flex-direction: column;
                 gap: 1rem;
                 padding: 1.5rem;
+            }
+
+            .price-tag {
+                top: 0.5rem;
+                right: 0.5rem;
+                padding: 0.4rem 0.8rem;
+                font-size: 0.8rem;
             }
 
             .map-container {
