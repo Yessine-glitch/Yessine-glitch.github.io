@@ -380,3 +380,100 @@
             bottom: 0;
             z-index: 10;
         }
+
+         .warnings-section {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 152, 0, 0.15));
+            border-left: 5px solid #ff9800;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 25px rgba(255, 152, 0, 0.1);
+            animation: fadeInUp 0.8s ease-out;
+            animation-delay: 0.2s;
+            animation-fill-mode: both;
+        }
+
+        .warnings-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .warnings-header h3 {
+            color: #e65100;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .warning-icon {
+            font-size: 1.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .warnings-list {
+            list-style: none;
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .warning-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            border: 1px solid rgba(255, 152, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .warning-item:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateX(5px);
+            box-shadow: 0 4px 15px rgba(255, 152, 0, 0.2);
+        }
+
+        .warning-item::before {
+            content: '⚠️';
+            font-size: 1.1rem;
+            margin-top: 0.1rem;
+            flex-shrink: 0;
+        }
+
+        .warning-text {
+            color: #d84315;
+            font-size: 0.95rem;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .warning-priority {
+            background: linear-gradient(135deg, #ff5722, #ff7043);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: auto;
+            flex-shrink: 0;
+            text-transform: uppercase;
+            box-shadow: 0 2px 8px rgba(255, 87, 34, 0.3);
+        }
+
+        .priority-high {
+            background: linear-gradient(135deg, #f44336, #e57373);
+        }
+
+        .priority-medium {
+            background: linear-gradient(135deg, #ff9800, #ffb74d);
+        }
+
+        .priority-low {
+            background: linear-gradient(135deg, #4caf50, #81c784);
+        }
