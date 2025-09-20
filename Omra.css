@@ -629,4 +629,98 @@
 .flight-row > div:last-child .flight-red:last-child {
     display: none;
 }
+
 /* ...existing code... */
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .flight-details {
+        padding: 15px 10px;
+    }
+
+    .flight-header-container h3 {
+        font-size: 1rem;
+    }
+
+    .flight-duration {
+        font-size: 0.8rem;
+        padding: 3px 8px;
+    }
+
+    .flight-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .flight-row > div {
+        padding: 6px 8px;
+        font-size: 0.9em;
+        min-width: 100px; /* Ensures columns don't get too narrow */
+    }
+
+    .flight-header > div {
+        font-size: 0.85em;
+        white-space: nowrap;
+    }
+
+    .flight-extra {
+        gap: 8px;
+    }
+
+    .flight-extra span {
+        flex: 1 1 calc(50% - 8px);
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .schedule-block {
+        flex-direction: column;
+    }
+
+    .map-container {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .map-img {
+        max-height: 200px;
+    }
+
+    /* Adjust day headers for mobile */
+    .day-header {
+        padding: 10px;
+    }
+
+    .day-header h2 {
+        font-size: 1.2em;
+    }
+
+    .day-header p {
+        font-size: 0.9em;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+    .flight-header-container h3 {
+        font-size: 0.9rem;
+    }
+
+    .flight-row > div {
+        min-width: 80px;
+        font-size: 0.85em;
+    }
+
+    .flight-extra span {
+        flex: 1 1 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+        padding: 10px 0;
+    }
+}
