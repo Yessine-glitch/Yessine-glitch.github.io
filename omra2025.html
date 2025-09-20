@@ -3,12 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Voyage Ontario 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Omra.css">
 </head>
 <body>
-    <main>
-        <h1>Prochainement</h1>
-    </main>
+    <div class="floating-elements">
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+    </div>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="container">
+        <h1>Omra 2025</h1>
+
+        <!-- Warnings Section -->
+        <div class="warnings-section">
+            <div class="warnings-header">
+                <span class="warning-icon">⚠️</span>
+                <h3>À Vérifier / Confirmer</h3>
+            </div>
+            <ul class="warnings-list">
+                <li class="warning-item">
+                    <span class="warning-text">Faire la planification</span>
+                    <span class="warning-priority priority-medium">Important</span>
+                </li>
+            </ul>
+        </div>
+
+        <div id="day1-header" class="day-header">
+            <h2>JOUR 1 - Sandbanks</h2>
+            <p>Dimanche 27 juillet</p>
+        </div>
+
+        
+
+    <script>
+        // Progress bar animation
+        window.addEventListener('scroll', function() {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        });
+
+        // Smooth reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all schedule blocks
+        document.querySelectorAll('.schedule-block').forEach(block => {
+            observer.observe(block);
+        });
+
+        // Add click handlers for better mobile experience
+        document.querySelectorAll('.map-img').forEach(img => {
+            img.addEventListener('click', function() {
+                if (this.parentElement.tagName === 'A') {
+                    return; // Let the link handle the click
+                }
+                // Add a subtle animation for non-linked images
+                this.style.transform = 'scale(1.02)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+    </script>
+</body>
 </html>
